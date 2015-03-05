@@ -19,6 +19,8 @@ $("#ipsum-form").submit(function() {
 //Create an array of words to randomize later
   var words_bob = ["bob", "reginald t moneybags", "mc hammer", "vanilla ice", "@withloudhands", "remote-control helicopters", "kill your idols", "github hoodie", "i don't care"];
   var words_nobob = ["sunac", "rails", "febreze", "feelings friday", "drilling", "sinatra", "brita", "pizza", "beer", "number seven subs", "smoothie", "blue dog cafe", "shit avi says", "friday after flatiron"];  
+  var words_agco = ["Alert", "Alarm", "Notification", "rule",
+"threshold", "test", "criteria", "logic", "trigger", "policy", "tolerance", "notification settings", "notifier", "watcher"];  
   var words_all = words_bob.concat(words_nobob);
 
 //ELSE IF determines which array of words to show the user
@@ -27,7 +29,7 @@ $("#ipsum-form").submit(function() {
 } else if (chosen_button == "all-bob") {
    words = words_bob; 
 } else {
-words = words_nobob; }
+words = words_agco; }
 
 //Vary the number of sentences in each paragraph randomly
 var sentence_number = Math.floor( (Math.random()+4) * 2 );
